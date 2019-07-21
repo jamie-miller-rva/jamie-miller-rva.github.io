@@ -1,0 +1,102 @@
+<!--cloudiness.html-->
+
+
+<!DOCTYPE html>
+<html lang="en-us">
+          
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Jamie Miller">
+    <meta name="description" content="A web-visualization of Matplotlib output for Latitude vs. Cloudiness.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloudiness Visualization</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Link to Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- Link to local CSS file --> 
+        <link rel="stylesheet" href="Styles/style.css">  
+</head>
+        
+<body>
+<!-- Navbar Section -->
+    <div class="navigation">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" style="background-color:rgb(36, 160, 160);" href="Index.html">Climate & Latitude</a>
+        <button class="navbar-toggler border border-white" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>              
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <strong>Plots</strong>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="temp.html"><strong>Max Temperature</strong></a>
+                      <a class="dropdown-item" href="humidity.html"><strong>Humidity</strong></a>
+                      <a class="dropdown-item" href="cloudiness.html"><strong>Cloudiness</strong></a>
+                      <a class="dropdown-item" href="wind.html"><strong>Wind Speed</strong></a>
+                    </div>
+                </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="comparison.html"><strong>Comparison</strong></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="data.html"><strong>Data</strong></a>
+                  </li>
+              </ul>
+              </div>
+            </nav>
+            </div>
+          
+    <!-- Content Section -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12">
+                
+                <!-- Left Content Box -->                                
+                    <div class="visualization">
+                    
+                        <img src="Weather-API/output_data/Lat_vs_Cloudiness.png" class="vizualiztion rounded float-left" alt="Latitude vs. Cloudiness">                
+                    </div> 
+                  
+            </div>
+        
+                <!-- Right Content Box -->
+                    <div class="col-lg-6 col-md-12">
+                  
+                    <div class="box">
+                        <div class="container">
+                            <div class="row" style="padding-bottom: 10px;">
+                                <div class="col-12">
+                                    <h3 class="title">Latitude vs. Cloudiness</h3>
+                          
+                                    <p><strong>SUMMARY:</strong>Cloudiness vs. Latitude: There is no strong relationship between latitude and cloudiness.
+                                        However, it is interesting to see that a strong band of cities sits at 0, 20, 40, ~75 and 100% cloudiness.
+                                        These five breaks are similar to the cloud cover classification used in the aviaiton industry which
+                                        categorizes cloud cover in terms of 1/8th of sky cover with sky clear (0-8ths), trace (1-2/8th), 
+                                        scattered (3-4/8ths), broken (5-7/8th) and overcast ( 8/8th).</p>
+                                </div>
+                               
+                        
+                            </div>
+                        </div>
+                    </div>
+        </div>
+    </div>    
+        <!-- Footer Section -->
+        <footer>
+            <div class="footer">Analysis Conducted: July 2019 - Lead Analyst: Jamie Miller</div>
+        </footer>
+    
+        <!-- Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+                   
+    </body>
+</html>
